@@ -1,0 +1,316 @@
+header {
+  height: 5rem;
+  background: #212124;
+  background: linear-gradient(180deg, #212124ea 75%, #43444700);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 0; }
+  header div {
+    display: flex;
+    align-items: center;
+    width: 500px; }
+    header div .header__navbar {
+      width: 100%; }
+      header div .header__navbar ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        list-style-type: none; }
+        header div .header__navbar ul a {
+          text-decoration: none; }
+        header div .header__navbar ul li {
+          padding: 5px;
+          position: relative;
+          color: white;
+          font-size: 20px; }
+          header div .header__navbar ul li::before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transition: all .3s; }
+          header div .header__navbar ul li:hover::before {
+            width: 100%;
+            left: 0; }
+
+@media (max-width: 960px) {
+  body header div .header__navbar ul li {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  header {
+    display: none; } }
+
+body .tablet-navbar {
+  display: flex;
+  height: 4rem;
+  background-color: rgba(67, 68, 71, 0.85);
+  background: linear-gradient(0deg, rgba(67, 68, 71, 0.85) 60%, #43444700);
+  width: 100%;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  left: -100%;
+  position: fixed; }
+  body .tablet-navbar div {
+    display: flex;
+    align-items: center;
+    width: 500px; }
+    body .tablet-navbar div .bottomnavbar {
+      width: 100%; }
+      body .tablet-navbar div .bottomnavbar ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        list-style-type: none; }
+        body .tablet-navbar div .bottomnavbar ul a {
+          color: white;
+          font-size: 12px;
+          text-decoration: none; }
+          body .tablet-navbar div .bottomnavbar ul a li {
+            padding: 5px;
+            position: relative; }
+            body .tablet-navbar div .bottomnavbar ul a li::before {
+              content: "";
+              display: block;
+              width: 5px;
+              height: 2px;
+              background: white;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transition: all .3s; }
+            body .tablet-navbar div .bottomnavbar ul a li:hover::before {
+              width: 100%;
+              left: 0; }
+
+@media (max-width: 768px) {
+  body .tablet-navbar {
+    left: 0%;
+    top: calc(100vh - 4rem); }
+    body .tablet-navbar div {
+      width: 280px; } }
+
+body #footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0 0 4rem 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  height: calc(100vh - 5rem);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #212124; }
+  body main {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap; }
+    body main .container {
+      background: #212124;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 280px 0 400px 0;
+      width: 65%; }
+      body main .container .greetings {
+        display: flex;
+        align-items: center;
+        font-size: 24px; }
+        body main .container .greetings div {
+          align-self: center;
+          color: white; }
+          body main .container .greetings div span {
+            font-family: 'Indie Flower', cursive;
+            padding: 10px 0; }
+          body main .container .greetings div h1 {
+            padding: 10px 0; }
+          body main .container .greetings div h2 {
+            font-size: 22px;
+            font-family: 'Indie Flower', cursive;
+            padding: 20px 0;
+            font-weight: 300; }
+      body main .container .me div .miPersona {
+        border-radius: 50%; }
+    body main #conocimientos {
+      display: flex;
+      flex-flow: row wrap; }
+      body main #conocimientos h2 {
+        padding: 100px 0 80px 0;
+        color: white;
+        width: 100%; }
+      body main #conocimientos .tecnologias {
+        display: flex;
+        flex-flow: column nowrap; }
+        body main #conocimientos .tecnologias div {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          color: white; }
+          body main #conocimientos .tecnologias div img {
+            width: 125px; }
+          body main #conocimientos .tecnologias div span {
+            padding: 0 20px; }
+      body main #conocimientos .chCertificates {
+        display: flex;
+        align-items: center; }
+        body main #conocimientos .chCertificates img {
+          width: 350px;
+          margin: 50px 0; }
+    body main #proyectos {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 150px 0 100px 0;
+      color: white; }
+      body main #proyectos h2 {
+        padding: 100px 10px; }
+      body main #proyectos .sub-proyectos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        padding: 50px; }
+        body main #proyectos .sub-proyectos div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 50px;
+          margin: 10px;
+          height: 300px;
+          width: 275px;
+          border: 0.1rem solid #323236;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all .4s; }
+          body main #proyectos .sub-proyectos div:hover {
+            background: #161618; }
+            body main #proyectos .sub-proyectos div:hover .card-hover {
+              display: block;
+              position: absolute; }
+          body main #proyectos .sub-proyectos div .card-hover {
+            display: none;
+            color: white;
+            padding: 5px 30px;
+            font-size: 16px;
+            background: #040405f3;
+            border-radius: 50px; }
+    body main .static-container {
+      align-self: center; }
+    body main #contacto {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      color: white;
+      margin: 400px 0; }
+      body main #contacto h2 {
+        font-size: 28px;
+        padding: 100px 50px; }
+      body main #contacto .redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 650px; }
+        body main #contacto .redes a {
+          text-decoration: none;
+          color: white; }
+        body main #contacto .redes .mail {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          width: 285px;
+          padding: 10px 20px;
+          margin: 20px;
+          border: 0.1rem solid #323236;
+          border-radius: 2px;
+          transition: all 2s; }
+          body main #contacto .redes .mail:hover {
+            box-shadow: whitesmoke; }
+        body main #contacto .redes .wpp {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          width: 285px;
+          padding: 10px 20px;
+          margin: 20px;
+          border: 0.1rem solid #323236;
+          border-radius: 2px; }
+
+@media (max-width: 1300px) {
+  body main .container {
+    width: 80%;
+    margin: 300px 0 200px 0; }
+    body main .container .greetings {
+      font-size: 20px; }
+    body main .container .me {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body main .container .me div {
+        display: flex;
+        justify-content: center; }
+        body main .container .me div .miPersona {
+          width: 75%; }
+  body main #proyectos h2 {
+    padding: 100px 40px; } }
+
+@media (max-width: 960px) {
+  body main .container {
+    width: 85%; }
+    body main .container .greetings {
+      font-size: 16px; }
+    body main .container .me {
+      justify-content: flex-end; } }
+
+@media (max-width: 768px) {
+  body main .container {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 200px 0; }
+    body main .container .greetings {
+      order: 1;
+      margin: 50px 0; }
+    body main .container .me {
+      justify-content: center;
+      order: 0;
+      margin: 50px; }
+  body main #conocimientos .tecnologias div {
+    flex-flow: column nowrap;
+    text-align: center; }
+  body main #proyectos .sub-proyectos {
+    padding: 0; }
+  body main #contacto .redes {
+    width: 100%;
+    justify-content: center; } }
+
+@media (max-width: 425px) {
+  body main .container {
+    margin: 80px 0 200px 0; }
+  body main #conocimientos .chCertificates {
+    display: flex;
+    justify-content: center; }
+    body main #conocimientos .chCertificates img {
+      width: 75%; }
+  body main #contacto .redes .mail {
+    margin: 20px 0; }
+  body main #contacto .redes .wpp {
+    margin: 20px 0; } }
+
+@media (max-width: 315px) {
+  body main .container {
+    width: 100%; } }
